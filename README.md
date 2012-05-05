@@ -4,7 +4,7 @@
 Get started:
 
     $ git clone git@github.com:florinpatrascu/Sinatra-HART.git
-    $ cd sinatra-HART-boilerplate
+    $ cd Sinatra-HART
     $ gem install bundler #if you don't have it already?!
     $ bundle install
     $ bundle --binstubs
@@ -36,7 +36,7 @@ Testing coverage is generated with _SimpleCov_ flavor
 ## Playing  
 And if you're missing the rails c(onsole), don't worry, run: 
 
-    $ cd sinatra-HART-boilerplate
+    $ cd Sinatra-HART
     $ racksh
     Rack::Shell v0.9.11 started in development environment.
     [1] pry(main)> products = Product.all
