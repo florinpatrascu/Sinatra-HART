@@ -20,7 +20,7 @@ To create a new migration and then run the migration:
     $ rake db:migrate
 
 ## Testing
-Do not forget to create and migrate testing database before:
+Do not forget to create and migrate the testing database before:
 
     $ rake db:test:load
 Visit this [Preparing your Application for Testing][1] for more details.
@@ -50,5 +50,4 @@ for some rack console awesomess.
 Have fun!
 
 
-____
 [1]: http://guides.rubyonrails.org/testing.html#preparing-your-application-for-testing
