@@ -1,0 +1,3 @@
+#Sessions
+domain: "localhost"
+session_expire: 864000
