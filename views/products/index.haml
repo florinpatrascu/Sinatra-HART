@@ -1,0 +1,19 @@
+.row
+  %p
+    .span4
+      -unless @products.empty?
+        %table.table.table-striped.table-condensed
+          %thead
+            %tr
+              %td Product name
+              %td
+                %span.pull-right Price
+          %tbody
+            -@products.each do |p|
+              %tr
+                %td=p.name
+                %td
+                  %span.pull-right
+                    =p.price
+      -else
+        There are no products
