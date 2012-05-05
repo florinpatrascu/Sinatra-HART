@@ -1,5 +1,5 @@
 # Sinatra-HART
-### A Sinatra Haml, Activerecord, RSPEC and Twitter bootstrap boilerplate
+### A Sinatra Haml, Activerecord, RSpec and Twitter bootstrap boilerplate
 
 Get started:
 
