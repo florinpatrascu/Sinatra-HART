@@ -11,6 +11,7 @@ YAML.load_file('settings.yml').each {|k,v|
 ActiveRecord::Base.configurations = YAML::load(IO.read("db/config.yml"))
 ActiveRecord::Base.establish_connection(ENV['RACK_ENV'])
 ActiveRecord::Base.logger = Logger.new(File.open("log/#{ENV['RACK_ENV']}.log", "a")) #or STDOUT
+use ActiveRecord::QueryCache
 
 if defined? Encoding
   Encoding.default_external = Encoding::UTF_8
