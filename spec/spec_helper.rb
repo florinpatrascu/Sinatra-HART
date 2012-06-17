@@ -9,7 +9,7 @@ Bundler.setup
 Bundler.require(:default, ENV["RACK_ENV"].to_sym)
 require 'active_record'
 
-Dir["./lib/**/*.rb"].each { |f| require f}
+Dir["./lib/**/*.rb"].each { |f| require f }
 
 Webrat.configure do |conf|
   conf.mode = :rack

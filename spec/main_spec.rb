@@ -5,24 +5,24 @@ require 'rack/test'
 set :environment, :test
 
 def app
-	@app ||= Sinatra::Application
+  @app ||= Sinatra::Application
 end
 
 describe 'My-Store (demo)' do
-	include Rack::Test::Methods	
-	
-	before(:all) do
+  include Rack::Test::Methods
+
+  before(:all) do
     Product.delete_all
     @prod = Product.create(:name => "crayon", :price => 1.2)
   end
-    
-	["/", "/products"].each do |url|
+
+  ["/", "/products"].each do |url|
     it "should render page #{url}" do
       get url
       last_response.should be_ok
     end
   end
-	
+
   it "should find some products" do
     get '/products'
     last_response.should be_ok
